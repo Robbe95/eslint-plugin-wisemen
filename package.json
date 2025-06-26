@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-wisemen",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Eslint rules extended for Wisemen",
   "license": "MIT",
   "homepage": "https://github.com/Robbe95/eslint-plugin-wisemen.git",
@@ -22,7 +22,13 @@
       "default": "./dist/index.js"
     }
   },
-  "module": "true",
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "typings": "./dist/index.d.ts",
+
   "scripts": {
     "build": "tsdown",
     "pub:release": "pnpm publish --access public",
