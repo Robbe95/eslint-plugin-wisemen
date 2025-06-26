@@ -9,7 +9,7 @@ const plugin = {
     'explicit-function-return-type-with-regex': explicitFunctionReturnType,
   } satisfies Linter.PluginRules,
   meta: {
-    name: 'eslint-explicit-return-type-with-regex',
+    name: 'eslint-plugin-wisemen',
     version,
   },
 }

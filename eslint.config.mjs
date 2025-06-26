@@ -3,11 +3,11 @@ import eslintVueConfig from '@wisemen/eslint-config-vue'
 export default [
   {
     ignores: [
-      '**/rules/src/configs/**/*',
-      '**/rules/src/util/**/*',
-      '**/rules/tools/**/*',
+      '**/src/configs/**/*',
+      '**/src/util/**/*',
+      '**/tools/**/*',
 
-      '**/rules/src/index.ts',
+      '**/src/index.ts',
       '**/utils/src/**/*',
       '**/utils/tests/**/*',
 

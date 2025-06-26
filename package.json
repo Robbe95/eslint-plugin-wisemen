@@ -4,14 +4,11 @@
   "version": "0.0.1",
   "description": "Eslint rules extended for Wisemen",
   "license": "MIT",
-  "homepage": "https://typescript-eslint.io/packages/eslint-plugin",
+  "homepage": "https://github.com/Robbe95/eslint-plugin-wisemen.git",
   "repository": {
     "type": "git",
-    "url": "https://github.com/typescript-eslint/typescript-eslint.git",
-    "directory": "packages/eslint-plugin"
-  },
-  "bugs": {
-    "url": "https://github.com/typescript-eslint/typescript-eslint/issues"
+    "url": "https://github.com/Robbe95/eslint-plugin-wisemen.git",
+    "directory": "."
   },
   "keywords": [
     "eslint",
@@ -21,35 +18,12 @@
   ],
   "exports": {
     ".": {
-      "types": "./index.d.ts",
+      "types": "./dist/index.d.ts",
       "default": "./dist/index.js"
-    },
-    "./package.json": "./package.json",
-    "./use-at-your-own-risk/rules": {
-      "types": "./rules.d.ts",
-      "default": "./dist/rules/index.js"
-    },
-    "./use-at-your-own-risk/raw-plugin": {
-      "types": "./raw-plugin.d.ts",
-      "default": "./dist/raw-plugin.js"
     }
   },
   "module": "true",
-  "files": [
-    "!*.tsbuildinfo",
-    "./README.md",
-    "LICENSE",
-    "dist",
-    "index.d.ts",
-    "package.json",
-    "raw-plugin.d.ts",
-    "rules.d.ts"
-  ],
-  "engines": {
-    "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
-  },
   "scripts": {
-    "//": "These package scripts are mostly here for convenience. Task running is handled by Nx at the root level.",
     "build": "tsdown",
     "clean": "rimraf dist/ coverage/",
     "lint": "pnpm eslint --fix .",
